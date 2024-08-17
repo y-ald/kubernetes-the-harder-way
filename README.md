@@ -15,6 +15,10 @@ The scripts work on both platforms (there are no separate versions).
 This guide follows the license of the original 
 [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way):
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+remote.origin.url=https://github.com/ghik/kubernetes-the-harder-way.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
 
 ## Chapters
 
