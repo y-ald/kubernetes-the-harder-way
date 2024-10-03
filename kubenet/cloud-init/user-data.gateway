@@ -7,7 +7,14 @@ chpasswd:
   expire: False
 package_update: true
 package_upgrade: true
-package_reboot_if_required: false
+package_reboot_if_requirdrivesankofa@gmail.comed: false
 
 packages:
-    - curl
+  - curl
+  - ipvsadm
+  - ldirectord
+
+ca_certs:
+  trusted:
+    - |
+$(sed "s/^/      /g" "$dir/auth/ca.pem")
