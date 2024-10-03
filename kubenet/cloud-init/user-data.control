@@ -1,2 +1,13 @@
 #cloud-config
-password: ubuntu
+ssh_authorized_keys:
+  - $(<~/.ssh/id_rsa.pub)
+chpasswd:
+  list: |
+    ubuntu:yald
+  expire: False
+package_update: true
+package_upgrade: true
+package_reboot_if_required: false
+
+packages:
+    - curl
